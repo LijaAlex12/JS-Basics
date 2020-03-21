@@ -15,4 +15,6 @@
   function function_name(){
     alert('hello');
   }
+
+//workink around objects and their behaviours
   
