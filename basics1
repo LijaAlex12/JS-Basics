@@ -1,0 +1,8 @@
+var guestlist=['lija','merin','alex','subi'];
+name=prompt('enter ur name');
+if(guestlist.includes(name)){
+    alert("Welcome");
+}
+else{
+    alert('next time');
+}
