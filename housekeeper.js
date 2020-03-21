@@ -2,6 +2,7 @@ function HouseKeeper(yearOfExperience,name,cleaningRepertoire){
     this.yearOfExperience=yearOfExperience;
     this.name=name;
     this.cleaningRepertoire=cleaningRepertoire;
+    //constructor function with name clean
     this.clean=function(){
         alert('cleaning in progress');
     };
