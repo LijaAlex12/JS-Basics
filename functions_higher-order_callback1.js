@@ -16,5 +16,46 @@
     alert('hello');
   }
 
-//workink around objects and their behaviours
+//working around objects and their behaviours
+  
+$0.addEventListener("click",function(event){
+  console.log(event); k
+});
+//
+function anotherAddEventListener(typeOfEvent,callback){               callback=function(event){console.log(event)};
+  
+
+    var eventThatHappened={
+      eventType="keypress",
+      key="p",
+      durationOfKeypress:2;
+  }
+  if(eventThatHappened.eventType===typeOfEvent){
+    callback(eventThatHappened);
+  }
+  
+}
+anotherAddEventListener("keypress",function(event){
+  console.log(event);
+});
+//note important simplified view
+function add(event){
+  console.log(event);
+}
+function multiply(event){
+  console.log(event);
+}
+function anotherAddEventListener(typeOfEvent,callback){               //callback=function(event){console.log(event)};
+  var eventThatHappened={
+      eventType="keypress",
+      key="p",
+      durationOfKeypress:2;
+  }
+  if(eventThatHappened.eventType===typeOfEvent){
+    callback(eventThatHappened);
+  }}
+anotherAddEventListener("keypress",add);
+anotherAddEventListener("keypress",multiply);
+
+
   
